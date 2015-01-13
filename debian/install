@@ -1,0 +1,3 @@
+debian/*.theme var/lib/vdr/themes
+themes/* usr/share/vdr/plugins/skindesigner/skins/blackholefrodo/themes
+xmlfiles/* usr/share/vdr/plugins/skindesigner/skins/blackholefrodo/xmlfiles

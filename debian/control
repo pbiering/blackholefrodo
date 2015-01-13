@@ -1,0 +1,15 @@
+Source: skindesigner-skin-blackholefrodo
+Section: misc
+Priority: extra
+Maintainer: Frodo <frodo.vdr@gmx.net>
+Uploaders: Frodo <frodo.vdr@gmx.net>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.3
+Homepage: 
+
+Package: skindesigner-skin-blackholefrodo
+Architecture: all
+Depends: ${misc:Depends}, vdr-plugin-skindesigner (>= 0.1.2~)
+Recommends: fonts-ds-digital
+Description: theme blackholefrodo for skindesigner
+
