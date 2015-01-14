@@ -9,7 +9,6 @@ Homepage:
 
 Package: skindesigner-skin-blackholefrodo
 Architecture: all
-Depends: ${misc:Depends}, vdr-plugin-skindesigner (>= 0.1.2~)
-Recommends: fonts-ds-digital
-Description: theme blackholefrodo for skindesigner
+Depends: ${misc:Depends}, vdr-plugin-skindesigner (>= 0.1.2~), fonts-ds-digital
+Description: skin blackholefrodo for skindesigner
 
