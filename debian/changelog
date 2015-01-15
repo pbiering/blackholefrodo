@@ -1,6 +1,6 @@
-skindesigner-skin-blackholefrodo (0.1.2.git20150113.2208-0frodo0~trusty) trusty; urgency=low
+skindesigner-skin-blackholefrodo (0.1.2.git20150114.1455-0frodo0~trusty) trusty; urgency=low
 
-  * New upstream snapshot (commit 70d574a), build 0001
+  * New upstream snapshot (commit 06827ff), build 0002
 
- -- Frodo <frodo.vdr@gmx.net>  Tue, 13 Jan 2015 23:08:23 +0100
+ -- Frodo <frodo.vdr@gmx.net>  Wed, 14 Jan 2015 15:55:07 +0100
 

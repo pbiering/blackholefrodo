@@ -2,7 +2,7 @@ echo Downloading latest from git repository...
 # set -x
 
 BUILDDISTRIBUTION=$1
-GITSOURCE='https://github.com/FrodoVDR/blackholefrodo'
+GITSOURCE='https://github.com/FrodoVDR/blackholefrodo.git'
 
 DEB_SOURCE_PACKAGE=`egrep '^Source: ' debian/control | cut -f 2 -d ' '`
 DISTRIBUTION=`dpkg-parsechangelog | grep ^Distribution: | sed -e 's/^Distribution:\s*//'`
