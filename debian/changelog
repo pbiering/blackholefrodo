@@ -1,6 +1,6 @@
-skindesigner-skin-blackholefrodo (0.1.3.git20150116.1327-0frodo0~trusty) trusty; urgency=low
+skindesigner-skin-blackholefrodo (0.1.3.git20150116.1345-0frodo0~trusty) trusty; urgency=low
 
-  * New upstream snapshot (commit 336fbdf), build 0005
+  * 07c883e: change name to epgname skindesigner 1.3.0-1
 
- -- Frodo <frodo.vdr@gmx.net>  Fri, 16 Jan 2015 14:27:27 +0100
+ -- Frodo <frodo.vdr@gmx.net>  Fri, 16 Jan 2015 14:45:47 +0100
 

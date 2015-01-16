@@ -15,6 +15,7 @@ fi
 
 if [ -d ".git" ] ; then
 	git pull
+	GITCHANGE=$(git log --pretty=format:"%h: %s" -1)
 fi
 
 VERSION_DATE=`/bin/date --utc +%0Y%0m%0d`
@@ -67,7 +68,7 @@ do
 		tar --exclude=.git --exclude=debian -c${pack}f ${DEBSRCPKGFILE} ${DEB_SOURCE_PACKAGE}
 		rm -rf ${DEB_SOURCE_PACKAGE}
 
-		dch -b -D ${DISTRIBUTION} -v "${VERSION_FULL}-0frodo0~${DISTRIBUTION}" "New upstream snapshot (commit ${GIT_SHA}), build ${GITBUILD}"
+		dch -b -D ${DISTRIBUTION} -v "${VERSION_FULL}-0frodo0~${DISTRIBUTION}" "${GITCHANGE}"
                 mv ./debian/changelog ./debian/changelog.old
                 cat ./debian/changelog.old | head -6 > ./debian/changelog
 
