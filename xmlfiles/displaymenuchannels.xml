@@ -37,7 +37,8 @@
                 <drawimage condition="{current}" imagetype="skinpart" path="menubuttonactive" x="0" y="0" width="100%" height="100%"/>
             </area>
             <area condition="not{separator}" x="1%" width="9%" layer="3">
-                <drawimage name="logo" imagetype="channellogo" path="{channelid}" width="90%" height="90%" align="center" valign="center" />
+                <drawimage name="logo" condition="{channellogoexists}" imagetype="channellogo" path="{channelid}" width="90%" height="90%" align="center" valign="center" />
+                <drawimage name="logo" condition="not{channellogoexists}" imagetype="icon" path="vdrlogo" width="60%" height="60%"  align="center" valign="center" />
             </area>
             <area condition="not{separator}" x="11%" width="39%" layer="3">
                 <drawtext condition="not{current}" x="0" y="5%" font="{regular}" fontsize="35%" color="{clrGray}" text="{sourcedescription}, Transp. {transponder}" />
@@ -106,7 +107,8 @@
                 <drawimage imagetype="skinpart" path="displaymenucurrentback" x="0" y="0" width="100%" height="100%"/>
             </area>
             <area x="55%" y="53%" width="44%" height="47%" layer="3">
-                <drawimage name="logo" imagetype="channellogo" path="{channelid}" width="30%" height="30%" align="right" y="0" />
+                <drawimage name="logo" condition="{channellogoexists}" imagetype="channellogo" path="{channelid}" width="30%" height="30%" align="right" y="0" />
+                <drawimage name="logo" condition="not{channellogoexists}" imagetype="icon" path="vdrlogo" width="30%" height="30%" align="right" y="0" />
             </area>
             <areascroll mode="forthandback" orientation="vertical" delay="1000" scrollspeed="medium" x="55%" y="52%" width="45%" height="48%" layer="4">
                 <drawtext x="10" y="0" font="{semibold}" fontsize="11%" color="{clrWhite}" text="{tr(schedule)}:" />

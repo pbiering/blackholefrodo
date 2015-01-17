@@ -50,7 +50,8 @@
     -->
     <detailheader>
         <area x="0" y="0" width="83%" height="6%" layer="3">
-            <drawimage name="logo" imagetype="channellogo" path="{channelid}" x="1%" width="5%" height="90%" align="left" valign="center" />
+            <drawimage name="logo" condition="{channellogoexists}" imagetype="channellogo" path="{channelid}" x="1%" width="5%" height="90%" align="left" valign="center" />
+            <drawimage name="logo" condition="not{channellogoexists}" imagetype="icon" path="vdrlogo" x="1%" width="5%" height="90%"  align="left" valign="center" />
             <drawtext x="{posx(logo)} + {width(logo)}+20" valign="center" font="{semibold}" fontsize="80%" color="{clrWhite}" text="{channelnumber} - {channelname}" />
         </area>
         <area x="1%" y="10%" width="50%" height="84%" layer="2">

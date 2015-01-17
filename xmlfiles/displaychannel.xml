@@ -34,7 +34,9 @@
             <drawtext x="0" y="0" font="{semibold}" fontsize="35%" color="{clrWhite}" text="{channelnumber}  {channelname}" />
         </area>
         <area x="2%" y="52%" width="13%" height="70%" layer="2">
-            <drawimage cache="true" imagetype="channellogo" path="{channelid}" width="100%" height="100%" align="center" valign="center"/>
+            <!-- <drawimage cache="true" imagetype="channellogo" path="{channelid}" width="100%" height="100%" align="center" valign="center"/> -->
+            <drawimage condition="{channellogoexists}" cache="true" imagetype="channellogo" path="{channelid}" width="100%" height="100%" align="center" valign="center"/>
+            <drawimage condition="not{channellogoexists}" cache="true" imagetype="icon" path="vdrlogo" width="100%" height="100%" align="center" valign="center"/>
         </area>
     </channelinfo>
 
