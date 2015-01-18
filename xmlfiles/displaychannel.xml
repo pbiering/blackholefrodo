@@ -190,8 +190,8 @@
     <devices>
         <area x="48%" y="94%" width="36%" height="5%" layer="2">
             <loop name="devices" x="2" y="4" orientation="horizontal" columnwidth="{areawidth} / {numdevices}" rowheight="{areaheight}" overflow="cut">
-                <drawtext x="2" y="0" font="{regular}" fontsize="30%" color="{clrGray}" text="{devices[num]}: {devices[type]}" />
-                <drawtext condition="{devices[hascam]}" y="0" align="right" font="{regular}" fontsize="30%" color="{clrGray}" text="(CAM {devices[cam]})    " />
+                <drawtext condition="not{devices[hascam]}" x="2" y="0" font="{regular}" fontsize="30%" color="{clrGray}" text="{devices[num]}: {devices[type]}" />
+                <drawtext condition="{devices[hascam]}" x="2" y="0" font="{regular}" fontsize="30%" color="{clrGray}" text="{devices[num]}: {devices[type]} (CAM {devices[cam]})" />
                 <drawtext condition="{devices[recording]} ++ {devices[livetv]}" x="2" y="35%" font="{regular}" fontsize="25%" width="100%" color="{clrRed}" text="LiveTV, Recording ({devices[channelname]}) " />
                 <drawtext condition="{devices[recording]} ++ not{devices[livetv]}" x="2" y="35%" font="{regular}" fontsize="25%" width="100%" color="{clrRed}" text="Recording ({devices[channelname]}) " />
                 <drawtext condition="not{devices[recording]} ++ {devices[livetv]}" x="2" y="35%" font="{regular}" fontsize="25%" width="100%" color="{clrGray}" text="LiveTV ({devices[channelname]}) " />
