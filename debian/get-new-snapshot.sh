@@ -9,6 +9,8 @@ DISTRIBUTION=`dpkg-parsechangelog | grep ^Distribution: | sed -e 's/^Distributio
 VERSION_UPSTREAM=`dpkg-parsechangelog | grep ^Version: | sed -e 's/^Version:\s*//' -e s/-[^-]*$// -e s/\.git.*//`
 GIT_SHA_OLD=`git show --pretty=format:"%h" --quiet | head -1 || true`
 
+VERSION_UPSTREAM=$(grep 'static const char \*VERSION' ../vdr-plugin-skindesigner/skindesigner.c | sed -e 's/^.*=//g'  -e 's/[";]//g' -e 's/\s//g')
+
 if [ -d ${DEB_SOURCE_PACKAGE} ] ; then
         rm -rf ${DEB_SOURCE_PACKAGE}
 fi
