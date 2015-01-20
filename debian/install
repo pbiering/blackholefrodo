@@ -1,4 +1,0 @@
-vdr-themes/*.theme var/lib/vdr/themes
-setup.xml usr/share/vdr/plugins/skindesigner/skins/blackholefrodo
-themes/* usr/share/vdr/plugins/skindesigner/skins/blackholefrodo/themes
-xmlfiles/* usr/share/vdr/plugins/skindesigner/skins/blackholefrodo/xmlfiles
