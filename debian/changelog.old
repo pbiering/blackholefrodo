@@ -1,12 +1,12 @@
-skindesigner-skin-blackholefrodo (0.1.3.git20150118.1303-0frodo0~trusty) trusty; urgency=low
+skindesigner-skin-blackholefrodo (0.1.5.git20150120.2051-0frodo0~trusty) trusty; urgency=low
 
-  * 6453375: correct cam handling
+  * 591f02b: remove logos, please use channellogos
 
- -- Frodo <frodo.vdr@gmx.net>  Sun, 18 Jan 2015 14:04:08 +0100
+ -- Frodo <frodo.vdr@gmx.net>  Tue, 20 Jan 2015 21:51:25 +0100
 
-skindesigner-skin-blackholefrodo (0.1.3.git20150118.1302-0frodo0~precise) precise; urgency=low
+skindesigner-skin-blackholefrodo (0.1.5.git20150120.2050-0frodo0~precise) precise; urgency=low
 
-  * 6453375: correct cam handling
+  * 591f02b: remove logos, please use channellogos
 
- -- Frodo <frodo.vdr@gmx.net>  Sun, 18 Jan 2015 14:03:03 +0100
+ -- Frodo <frodo.vdr@gmx.net>  Tue, 20 Jan 2015 21:51:00 +0100
 
