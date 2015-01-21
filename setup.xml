@@ -13,13 +13,13 @@
     The configured parameter value is the default value.
     -->
     <parameters>
-        <parameter type="bool" name="showdevices" displaytext="{tr(showdevices)}">0</parameter>
+        <parameter type="bool" name="showdevices" displaytext="{tr(showdevices)}">1</parameter>
         <parameter type="bool" name="showposter" displaytext="{tr(showpostertext)}">1</parameter>
         <parameter type="bool" name="showmainmenuicons" displaytext="{tr(showmainmenuicons)}">1</parameter>
         <parameter type="int" name="fadetime" min="0" max="1000" displaytext="{tr(fadetext)}">300</parameter>
-        <parameter type="int" name="nummenuitemsmain" min="6" max="30" displaytext="{tr(nummenuitemsmain)}">10</parameter>
-        <parameter type="int" name="nummenuitems" min="6" max="30" displaytext="{tr(nummenuitems)}">10</parameter>
-        <parameter type="int" name="nummenuitemsdefault" min="6" max="30" displaytext="{tr(nummenuitemsdefault)}">16</parameter>
+        <parameter type="int" name="nummenuitemsmain" min="6" max="30" displaytext="{tr(nummenuitemsmain)}">14</parameter>
+        <parameter type="int" name="nummenuitems" min="6" max="30" displaytext="{tr(nummenuitems)}">14</parameter>
+        <parameter type="int" name="nummenuitemsdefault" min="6" max="30" displaytext="{tr(nummenuitemsdefault)}">18</parameter>
         <parameter type="bool" name="showsubtitle" displaytext="{tr(showsubtitle)}">1</parameter>
     </parameters>
 

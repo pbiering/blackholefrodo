@@ -30,7 +30,7 @@
         </area>
     </scrollbar>
 
-    <menuitems x="1%" y="10%" orientation="vertical" width="98%" height="84%" align="center" numlistelements="14">
+    <menuitems x="1%" y="10%" orientation="vertical" width="98%" height="84%" align="center" numlistelements="{nummenuitems}">
         <!-- Available Variables schedules menu listelement:
         {nummenuitem}             number of item in list, starts with 1
         {title}                   title of event
