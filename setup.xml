@@ -20,7 +20,7 @@
         <parameter type="int" name="nummenuitemsmain" min="6" max="30" displaytext="{tr(nummenuitemsmain)}">14</parameter>
         <parameter type="int" name="nummenuitems" min="6" max="30" displaytext="{tr(nummenuitems)}">14</parameter>
         <parameter type="int" name="nummenuitemsdefault" min="6" max="30" displaytext="{tr(nummenuitemsdefault)}">18</parameter>
-        <parameter type="bool" name="showsubtitle" displaytext="{tr(showsubtitle)}">1</parameter>
+        <parameter type="bool" name="showsubtitle" displaytext="{tr(showsubtitle)}">0</parameter>
     </parameters>
 
     <!--
