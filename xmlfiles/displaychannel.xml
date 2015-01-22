@@ -108,6 +108,7 @@
             <drawimage condition="{isDolby}" imagetype="icon" path="ico_dolby" x="{areaheight}*6 + 20" y="0" width="{areaheight}*3" height="{areaheight}"/>
             <drawimage condition="{hasVT}" imagetype="icon" path="ico_videotext" x="{areaheight}*9 + 30" y="0" width="{areaheight}" height="{areaheight}"/>
             <drawimage condition="{isEncrypted}" imagetype="icon" path="ico_crypted" x="{areaheight}*10 + 40" y="0" width="{areaheight}*2" height="{areaheight}"/>
+            <drawimage condition="{isRecording}" imagetype="icon" path="ico_rec_on" x="{areaheight}*12 + 50" y="0" width="{areaheight}" height="{areaheight}"/>
         </area>
     </statusinfo>
 
@@ -182,16 +183,16 @@
     {devices[source]}           source of the currently tuned channel
     -->
     <devices>
-        <area condition="{showdevices}" x="48%" y="94%" width="36%" height="5%" layer="2">
-            <loop name="devices" x="2" y="4" orientation="horizontal" columnwidth="{areawidth} / {numdevices}" rowheight="{areaheight}" overflow="cut">
+        <area condition="{showdevices}" x="50%" y="94%" width="34%" height="5%" layer="2">
+            <loop name="devices" x="2" y="4" orientation="horizontal" columnwidth="{areawidth} / {numdevices}" rowheight="{areaheight}"  overflow="cut">
                 <drawtext condition="not{devices[hascam]}" x="2" y="0" font="{bold}" fontsize="35%" color="{clrGray}" text="{devices[num]}: {devices[type]}" />
                 <drawtext condition="{devices[hascam]}" x="2" y="0" font="{bold}" fontsize="35%" color="{clrGray}" text="{devices[num]}: {devices[type]} (CAM {devices[cam]})" />
-                <drawtext condition="{devices[recording]} ++ {devices[livetv]}" x="2" y="35%" font="{regular}" fontsize="28%" width="100%" color="{clrRed}" text="LiveTV, Recording ({devices[channelname]}) " />
-                <drawtext condition="{devices[recording]} ++ not{devices[livetv]}" x="2" y="35%" font="{regular}" fontsize="28%" width="100%" color="{clrRed}" text="Recording ({devices[channelname]}) " />
-                <drawtext condition="not{devices[recording]} ++ {devices[livetv]}" x="2" y="35%" font="{regular}" fontsize="28%" width="100%" color="{clrGray}" text="LiveTV ({devices[channelname]}) " />
-                <drawtext condition="not{devices[istuned]}" x="2" y="35%" font="{regular}" fontsize="30%" width="100%" color="{clrGray}" text="not tuned" />
-                <drawrectangle  x="2" y="70%" width="{columnwidth} * {devices[signalstrength]} / 100 - 10 * {devices[signalstrength]} / 100" height="{rowheight}/15" color="{clrGray}" />
-                <drawrectangle  x="2" y="85%" width="{columnwidth} * {devices[signalquality]} / 100 - 10 * {devices[signalquality]} / 100" height="{rowheight}/15" color="{clrGray}" />
+                <drawtext condition="{devices[recording]} ++ {devices[livetv]}" x="2" y="34%" font="{regular}" fontsize="28%" width="{columnwidth}" color="{clrRed}" text="LiveTV, Aufnahme ({devices[channelname]}) " />
+                <drawtext condition="{devices[recording]} ++ not{devices[livetv]}" x="2" y="34%" font="{regular}" fontsize="28%" width="{columnwidth}" color="{clrRed}" text="Aufnahme ({devices[channelname]}) " />
+                <drawtext condition="not{devices[recording]} ++ {devices[livetv]}" x="2" y="34%" font="{regular}" fontsize="28%" width="{columnwidth}" color="{clrGray}" text="LiveTV ({devices[channelname]}) " />
+                <drawtext condition="not{devices[istuned]}" x="2" y="34%" font="{regular}" fontsize="30%" width="{columnwidth}" color="{clrGray}" text="not tuned" />
+                <drawrectangle condition="{devices[istuned]}" x="2" y="70%" width="{columnwidth} * {devices[signalstrength]} / 100 - 10 * {devices[signalstrength]} / 100" height="{rowheight}/15" color="{clrGray}" />
+                <drawrectangle condition="{devices[istuned]}" x="2" y="85%" width="{columnwidth} * {devices[signalquality]} / 100 - 10 * {devices[signalquality]} / 100" height="{rowheight}/15" color="{clrGray}" />
             </loop>  
         </area>
     </devices>
