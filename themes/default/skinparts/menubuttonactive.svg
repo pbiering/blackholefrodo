@@ -14,7 +14,7 @@
    height="80"
    id="svg5278"
    version="1.1"
-   inkscape:version="0.91pre2 r13516"
+   inkscape:version="0.91pre3 r13670"
    viewBox="0 0 960 80.000001"
    sodipodi:docname="menubuttonactive.svg">
   <defs
@@ -56,11 +56,11 @@
        inkscape:collect="always"
        id="linearGradient5073">
       <stop
-         style="stop-color:#00284a;stop-opacity:1;"
+         style="stop-color:#285072;stop-opacity:1"
          offset="0"
          id="stop5075" />
       <stop
-         style="stop-color:#000000;stop-opacity:1"
+         style="stop-color:#282828;stop-opacity:1"
          offset="1"
          id="stop5077" />
     </linearGradient>
@@ -83,15 +83,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.6493863"
-     inkscape:cx="438.84901"
+     inkscape:zoom="1.2902529"
+     inkscape:cx="508.97868"
      inkscape:cy="32.058072"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1846"
-     inkscape:window-height="1058"
-     inkscape:window-x="66"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata

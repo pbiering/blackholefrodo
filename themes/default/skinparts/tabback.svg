@@ -14,7 +14,7 @@
    height="200"
    id="svg4153"
    version="1.1"
-   inkscape:version="0.91pre2 r13516"
+   inkscape:version="0.91pre3 r13670"
    viewBox="0 0 800 200"
    sodipodi:docname="tabback.svg">
   <defs
@@ -47,11 +47,11 @@
        inkscape:collect="always"
        id="linearGradient4703">
       <stop
-         style="stop-color:#000000;stop-opacity:1;"
+         style="stop-color:#282828;stop-opacity:1"
          offset="0"
          id="stop4705" />
       <stop
-         style="stop-color:#333333;stop-opacity:1"
+         style="stop-color:#5b5b5b;stop-opacity:1"
          offset="1"
          id="stop4707" />
     </linearGradient>
@@ -140,15 +140,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.3725434"
-     inkscape:cx="744.58182"
+     inkscape:zoom="1.5459275"
+     inkscape:cx="400.05957"
      inkscape:cy="69.621951"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1846"
-     inkscape:window-height="1058"
-     inkscape:window-x="66"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
@@ -177,7 +177,7 @@
        y="852.36218"
        ry="1.0185972" />
     <rect
-       style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke:#ececec;stroke-opacity:1"
+       style="fill:#1e1e1e;fill-opacity:1;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke:#ececec;stroke-opacity:1"
        id="rect4711"
        width="760"
        height="60"

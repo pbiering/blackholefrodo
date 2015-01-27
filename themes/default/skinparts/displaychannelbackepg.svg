@@ -14,11 +14,23 @@
    height="130"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91pre2 r13516"
+   inkscape:version="0.91pre3 r13670"
    viewBox="0 0 1280 130"
    sodipodi:docname="displaychannelbackepg.svg">
   <defs
      id="defs4">
+    <linearGradient
+       id="linearGradient9770"
+       inkscape:collect="always">
+      <stop
+         id="stop9772"
+         offset="0"
+         style="stop-color:#466d8d;stop-opacity:1" />
+      <stop
+         id="stop9774"
+         offset="1"
+         style="stop-color:#316696;stop-opacity:0" />
+    </linearGradient>
     <linearGradient
        inkscape:collect="always"
        id="linearGradient4794">
@@ -57,7 +69,7 @@
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient4759"
+       xlink:href="#linearGradient9770"
        id="linearGradient4766"
        x1="935.20227"
        y1="896.86908"
@@ -204,16 +216,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.64122727"
-     inkscape:cx="587.59957"
+     inkscape:zoom="0.8"
+     inkscape:cx="706.38756"
      inkscape:cy="32.802006"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      showgrid="false"
      units="px"
-     inkscape:window-width="1531"
-     inkscape:window-height="878"
-     inkscape:window-x="61"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:showpageshadow="false" />
@@ -225,7 +237,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -233,7 +245,8 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="EPG"
-     transform="translate(0,-950)">
+     transform="translate(0,-950)"
+     style="display:inline">
     <rect
        style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4736"

@@ -47,11 +47,11 @@
        inkscape:collect="always"
        id="linearGradient4425">
       <stop
-         style="stop-color:#333333;stop-opacity:1;"
+         style="stop-color:#a0a0a0;stop-opacity:0.09411765"
          offset="0"
          id="stop4427" />
       <stop
-         style="stop-color:#444444;stop-opacity:1"
+         style="stop-color:#c8c8c8;stop-opacity:1"
          offset="1"
          id="stop4429" />
     </linearGradient>
@@ -117,15 +117,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.5136364"
-     inkscape:cx="161.76342"
+     inkscape:cx="98.508448"
      inkscape:cy="98.571429"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
-     inkscape:window-width="1531"
-     inkscape:window-height="878"
-     inkscape:window-x="61"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
@@ -136,7 +136,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

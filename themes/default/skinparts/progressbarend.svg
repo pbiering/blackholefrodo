@@ -14,7 +14,7 @@
    height="30"
    id="svg4191"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91pre3 r13670"
    viewBox="0 0 15 30"
    sodipodi:docname="progressbarend.svg">
   <defs
@@ -33,11 +33,11 @@
        inkscape:collect="always"
        id="linearGradient4169">
       <stop
-         style="stop-color:#000000;stop-opacity:1"
+         style="stop-color:#282828;stop-opacity:1"
          offset="0"
          id="stop4171" />
       <stop
-         style="stop-color:#00284a;stop-opacity:1"
+         style="stop-color:#285072;stop-opacity:1"
          offset="1"
          id="stop4173" />
     </linearGradient>
@@ -71,16 +71,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="20.693842"
-     inkscape:cx="-0.27737725"
+     inkscape:cx="-7.9608224"
      inkscape:cy="14.527028"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
-     inkscape:window-width="1600"
-     inkscape:window-height="1153"
-     inkscape:window-x="-2"
-     inkscape:window-y="-3"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata4196">
@@ -109,7 +109,7 @@
        sodipodi:ry="14.009566"
        sodipodi:start="4.7114391"
        sodipodi:end="1.5745921"
-       d="m 1.0313805,1023.3526 c 7.1595475,-0.01 12.9690205,6.259 12.9758215,13.9963 0.0068,7.7372 -5.7916464,14.0155 -12.951194,14.0228 -0.020507,10e-5 -0.041014,0 -0.0615202,-10e-5"
+       d="m 1.0313805,1023.3526 a 12.963513,14.009566 0 0 1 11.2431395,7.0125 12.963513,14.009566 0 0 1 -0.01847,14.0287 12.963513,14.009566 0 0 1 -11.26156118,6.9778"
        sodipodi:open="true" />
   </g>
 </svg>
