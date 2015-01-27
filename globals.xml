@@ -90,6 +90,14 @@
             <trans lang="en_EN">Recording Information</trans>
             <trans lang="de_DE">Aufnahme Informationen</trans>
         </token>
+        <token name="tr(recordings)">
+            <trans lang="en_EN">Recordings</trans>
+            <trans lang="de_DE">Aufnahmen</trans>
+        </token>
+        <token name="tr(smallrecordings)">
+            <trans lang="en_EN">rec.</trans>
+            <trans lang="de_DE">Aufn.</trans>
+        </token>
         <token name="tr(seriesgalery)">
             <trans lang="en_EN">Series Galery</trans>
             <trans lang="de_DE">Serien Galerie</trans>
@@ -246,7 +254,11 @@
             <trans lang="en_EN">max</trans>
             <trans lang="de_DE">max</trans>
         </token>
-       <token name="tr(for)">
+        <token name="tr(new)">
+            <trans lang="en_EN">new</trans>
+            <trans lang="de_DE">neu</trans>
+        </token>
+        <token name="tr(for)">
             <trans lang="en_EN">for</trans>
             <trans lang="de_DE">für</trans>
         </token>

@@ -13,13 +13,15 @@
     The configured parameter value is the default value.
     -->
     <parameters>
-        <parameter type="bool" name="showdevices" displaytext="{tr(showdevices)}">1</parameter>
-        <parameter type="bool" name="showposter" displaytext="{tr(showpostertext)}">1</parameter>
-        <parameter type="bool" name="showmainmenuicons" displaytext="{tr(showmainmenuicons)}">1</parameter>
         <parameter type="int" name="fadetime" min="0" max="1000" displaytext="{tr(fadetext)}">300</parameter>
         <parameter type="int" name="nummenuitemsmain" min="6" max="30" displaytext="{tr(nummenuitemsmain)}">14</parameter>
         <parameter type="int" name="nummenuitems" min="6" max="30" displaytext="{tr(nummenuitems)}">14</parameter>
         <parameter type="int" name="nummenuitemsdefault" min="6" max="30" displaytext="{tr(nummenuitemsdefault)}">18</parameter>
+        <parameter type="bool" name="showdevices" displaytext="{tr(showdevices)}">1</parameter>
+        <parameter type="bool" name="showchannellogoback" displaytext="{tr(showchannellogoback)}">0</parameter>
+        <parameter type="bool" name="showposter" displaytext="{tr(showpostertext)}">1</parameter>
+        <parameter type="bool" name="showmainmenuicons" displaytext="{tr(showmainmenuicons)}">1</parameter>
+        <parameter type="bool" name="showrecording" displaytext="{tr(showrecording)}">0</parameter>
         <parameter type="bool" name="showsubtitle" displaytext="{tr(showsubtitle)}">0</parameter>
     </parameters>
 
@@ -27,9 +29,17 @@
     translations of displaytexts
     -->
     <translations>
+        <token name="tr(showrecording)">
+            <trans lang="en_EN">Show active recording info when switching channel</trans>
+            <trans lang="de_DE">Aufnahme Info beim Umschalten anzeigen</trans>
+        </token>
         <token name="tr(showdevices)">
             <trans lang="en_EN">Show DVB device info when switching channel</trans>
             <trans lang="de_DE">DVB Karten Info beim Umschalten anzeigen</trans>
+        </token>
+        <token name="tr(showchannellogoback)">
+            <trans lang="en_EN">Show channellogos background when switching channel</trans>
+            <trans lang="de_DE">Channellogos Hintergrund beim Umschalten anzeigen</trans>
         </token>
         <token name="tr(showpostertext)">
             <trans lang="en_EN">Show Poster when switching channel</trans>
