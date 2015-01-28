@@ -26,6 +26,7 @@
         <color name="clrGray">FFAAAAAA</color>
         <color name="clrRedTrans">00FF0000</color>
         <color name="clrBlackTrans">00000000</color>
+        <color name="clrDevice">FF999999</color>          
     </colors>
     <!--
     these variables can be used everywhere in the templates
