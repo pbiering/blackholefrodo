@@ -12,7 +12,7 @@
     "displayname" is used to display the option in the setup menu.
     The configured parameter value is the default value.
     -->
-    <parameters>
+    <menu>
         <parameter type="int" name="fadetime" min="0" max="1000" displaytext="{tr(fadetext)}">300</parameter>
         <parameter type="int" name="nummenuitemsmain" min="6" max="30" displaytext="{tr(nummenuitemsmain)}">14</parameter>
         <parameter type="int" name="nummenuitems" min="6" max="30" displaytext="{tr(nummenuitems)}">14</parameter>
@@ -23,7 +23,7 @@
         <parameter type="bool" name="showmainmenuicons" displaytext="{tr(showmainmenuicons)}">1</parameter>
         <parameter type="bool" name="showrecording" displaytext="{tr(showrecording)}">0</parameter>
         <parameter type="bool" name="showsubtitle" displaytext="{tr(showsubtitle)}">0</parameter>
-    </parameters>
+    </menu>
 
     <!--
     translations of displaytexts
