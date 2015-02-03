@@ -151,8 +151,8 @@
     -->
     <channelgroup>
         <area x="17%" y="82%" width="66%" height="10%" layer="3">
-            <drawtext x="1%" width="24%" valign="center" font="{semibold}" fontsize="40%" color="{clrWhite}" text="{prevgroup}" />
-            <drawtext x="30%" width="40%" valign="center" font="{semibold}" fontsize="60%" color="{clrWhite}" text="{group}" />
+            <drawtext align="left" x="1%" width="24%" valign="center" font="{semibold}" fontsize="40%" color="{clrWhite}" text="{prevgroup}" />
+            <drawtext align="center" x="30%" width="40%" valign="center" font="{semibold}" fontsize="60%" color="{clrWhite}" text="{group}" />
             <drawtext align="right" width="25%" valign="center" font="{semibold}" fontsize="40%" color="{clrWhite}" text="{nextgroup}" />
         </area>             
     </channelgroup>
