@@ -50,20 +50,20 @@
             <trans lang="de_DE">Icons im Hauptmenü anzeigen</trans>
         </token>
         <token name="tr(fadetext)">
-            <trans lang="en_EN">Fade time in ms (needs VDR restart)</trans>
-            <trans lang="de_DE">Einblendzeit in ms (erfordert VDR Neustart)</trans>
+            <trans lang="en_EN">Fade time in ms</trans>
+            <trans lang="de_DE">Einblendzeit in ms</trans>
         </token>
         <token name="tr(nummenuitemsmain)">
-            <trans lang="en_EN">Items in main menu (needs VDR restart)</trans>
-            <trans lang="de_DE">Elemente im Hauptmenü (erfordert VDR Neustart)</trans>
+            <trans lang="en_EN">Items in main menu</trans>
+            <trans lang="de_DE">Elemente im Hauptmenü</trans>
         </token>
         <token name="tr(nummenuitems)">
-            <trans lang="en_EN">Items in sdchedules, timers, ... menus (needs VDR restart)</trans>
-            <trans lang="de_DE">Elemente in Programm, Timer, ... Menüs (erfordert VDR Neustart)</trans>
+            <trans lang="en_EN">Items in sdchedules, timers, ... menus</trans>
+            <trans lang="de_DE">Elemente in Programm, Timer, ... Menüs</trans>
         </token>
         <token name="tr(nummenuitemsdefault)">
-            <trans lang="en_EN">Items in default list menu (needs VDR restart)</trans>
-            <trans lang="de_DE">Elemente im Standard ListenMenü (erfordert VDR Neustart)</trans>
+            <trans lang="en_EN">Items in default list menu</trans>
+            <trans lang="de_DE">Elemente im Standard ListenMenü</trans>
         </token>
         <token name="tr(showsubtitle)">
             <trans lang="en_EN">Show shorttexts in schedules menus</trans>
