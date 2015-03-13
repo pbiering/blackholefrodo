@@ -19,10 +19,10 @@
     </viewelement>
 
     <scrollbar>
-        <area x="52%" y="10%" width="2%" height="80%" layer="2">
+        <area x="52%" y="10%" width="2%" height="84%" layer="2">
             <drawimage imagetype="skinpart" path="scrollbarback" x="0" y="0" width="100%" height="100%"/>
         </area>
-        <area x="52%" y="10%" width="2%" height="80%" layer="3">
+        <area x="52%" y="10%" width="2%" height="84%" layer="3">
             <drawimage imagetype="skinpart" path="scrollbar" x="0" y="{areaheight} * {offset} / 1000" width="100%" height="{areaheight} * {height} / 1000"/>
         </area>
     </scrollbar>
@@ -50,103 +50,103 @@
     {blue}                    label of blue button
     -->
     <viewelement name="footer">
-        <area condition="{red1}" x="0" y="90%" width="25%" height="10%" layer="2">
+        <area condition="{red1}" x="0" y="94%" width="25%" height="8%" layer="2">
             <drawimage imagetype="skinpart" path="buttonred" align="center" valign="center" width="90%" height="60%"/>
         </area>
-        <area condition="{red1}" x="0" y="90%" width="25%" height="10%" layer="3">
+        <area condition="{red1}" x="0" y="94%" width="25%" height="8%" layer="3">
             <drawtext align="center" valign="center" font="{regular}" fontsize="50%" color="{clrWhite}" text="{red}" />
         </area>
-        <area condition="{green1}" x="0" y="90%" width="25%" height="10%" layer="2">
+        <area condition="{green1}" x="0" y="94%" width="25%" height="8%" layer="2">
             <drawimage imagetype="skinpart" path="buttongreen" align="center" valign="center" width="90%" height="60%"/>
         </area>
-        <area condition="{green1}" x="0" y="90%" width="25%" height="10%" layer="3">
+        <area condition="{green1}" x="0" y="94%" width="25%" height="8%" layer="3">
             <drawtext align="center" valign="center" font="{regular}" fontsize="50%" color="{clrWhite}" text="{green}" />
         </area>
-        <area condition="{yellow1}" x="0" y="90%" width="25%" height="10%" layer="2">
+        <area condition="{yellow1}" x="0" y="94%" width="25%" height="8%" layer="2">
             <drawimage imagetype="skinpart" path="buttonyellow" align="center" valign="center" width="90%" height="60%"/>
         </area>
-        <area condition="{yellow1}" x="0" y="90%" width="25%" height="10%" layer="4">
+        <area condition="{yellow1}" x="0" y="94%" width="25%" height="8%" layer="4">
             <drawtext align="center" valign="center" font="{regular}" fontsize="50%" color="{clrWhite}" text="{yellow}" />
         </area>
-        <area condition="{blue1}" x="0" y="90%" width="25%" height="10%" layer="2">
+        <area condition="{blue1}" x="0" y="94%" width="25%" height="8%" layer="2">
             <drawimage imagetype="skinpart" path="buttonblue" align="center" valign="center" width="90%" height="60%"/>
         </area>
-        <area condition="{blue1}" x="0" y="90%" width="25%" height="10%" layer="3">
+        <area condition="{blue1}" x="0" y="94%" width="25%" height="8%" layer="3">
             <drawtext align="center" valign="center" font="{regular}" fontsize="50%" color="{clrWhite}" text="{blue}" />
         </area>
 
-        <area condition="{red2}" x="25%" y="90%" width="25%" height="10%" layer="2">
+        <area condition="{red2}" x="25%" y="94%" width="25%" height="8%" layer="2">
             <drawimage imagetype="skinpart" path="buttonred" align="center" valign="center" width="90%" height="60%"/>
         </area>
-        <area condition="{red2}" x="25%" y="90%" width="25%" height="10%" layer="3">
+        <area condition="{red2}" x="25%" y="94%" width="25%" height="8%" layer="3">
             <drawtext align="center" valign="center" font="{regular}" fontsize="50%" color="{clrWhite}" text="{red}" />
         </area>
-        <area condition="{green2}" x="25%" y="90%" width="25%" height="10%" layer="2">
+        <area condition="{green2}" x="25%" y="94%" width="25%" height="8%" layer="2">
             <drawimage imagetype="skinpart" path="buttongreen" align="center" valign="center" width="90%" height="60%"/>
         </area>
-        <area condition="{green2}" x="25%" y="90%" width="25%" height="10%" layer="3">
+        <area condition="{green2}" x="25%" y="94%" width="25%" height="8%" layer="3">
             <drawtext align="center" valign="center" font="{regular}" fontsize="50%" color="{clrWhite}" text="{green}" />
         </area>
-        <area condition="{yellow2}" x="25%" y="90%" width="25%" height="10%" layer="2">
+        <area condition="{yellow2}" x="25%" y="94%" width="25%" height="8%" layer="2">
             <drawimage imagetype="skinpart" path="buttonyellow" align="center" valign="center" width="90%" height="60%"/>
         </area>
-        <area condition="{yellow2}" x="25%" y="90%" width="25%" height="10%" layer="3">
+        <area condition="{yellow2}" x="25%" y="94%" width="25%" height="8%" layer="3">
             <drawtext align="center" valign="center" font="{regular}" fontsize="50%" color="{clrWhite}" text="{yellow}" />
         </area>
-        <area condition="{blue2}" x="25%" y="90%" width="25%" height="10%" layer="2">
+        <area condition="{blue2}" x="25%" y="94%" width="25%" height="8%" layer="2">
             <drawimage imagetype="skinpart" path="buttonblue" align="center" valign="center" width="90%" height="60%"/>
         </area>
-        <area condition="{blue2}" x="25%" y="90%" width="25%" height="10%" layer="3">
+        <area condition="{blue2}" x="25%" y="94%" width="25%" height="8%" layer="3">
             <drawtext align="center" valign="center" font="{regular}" fontsize="50%" color="{clrWhite}" text="{blue}" />
         </area>
         
-        <area condition="{red3}" x="50%" y="90%" width="25%" height="10%" layer="2">
+        <area condition="{red3}" x="50%" y="94%" width="25%" height="8%" layer="2">
             <drawimage imagetype="skinpart" path="buttonred" align="center" valign="center" width="90%" height="60%"/>
         </area>
-        <area condition="{red3}" x="50%" y="90%" width="25%" height="10%" layer="3">
+        <area condition="{red3}" x="50%" y="94%" width="25%" height="8%" layer="3">
             <drawtext align="center" valign="center" font="{regular}" fontsize="50%" color="{clrWhite}" text="{red}" />
         </area>
-        <area condition="{green3}" x="50%" y="90%" width="25%" height="10%" layer="2">
+        <area condition="{green3}" x="50%" y="94%" width="25%" height="8%" layer="2">
             <drawimage imagetype="skinpart" path="buttongreen" align="center" valign="center" width="90%" height="60%"/>
         </area>
-        <area condition="{green3}" x="50%" y="90%" width="25%" height="10%" layer="3">
+        <area condition="{green3}" x="50%" y="94%" width="25%" height="8%" layer="3">
             <drawtext align="center" valign="center" font="{regular}" fontsize="50%" color="{clrWhite}" text="{green}" />
         </area>
-        <area condition="{yellow3}" x="50%" y="90%" width="25%" height="10%" layer="2">
+        <area condition="{yellow3}" x="50%" y="94%" width="25%" height="8%" layer="2">
             <drawimage imagetype="skinpart" path="buttonyellow" align="center" valign="center" width="90%" height="60%"/>
         </area>
-        <area condition="{yellow3}" x="50%" y="90%" width="25%" height="10%" layer="3">
+        <area condition="{yellow3}" x="50%" y="94%" width="25%" height="8%" layer="3">
             <drawtext align="center" valign="center" font="{regular}" fontsize="50%" color="{clrWhite}" text="{yellow}" />
         </area>
-        <area condition="{blue3}" x="50%" y="90%" width="25%" height="10%" layer="2">
+        <area condition="{blue3}" x="50%" y="94%" width="25%" height="8%" layer="2">
             <drawimage imagetype="skinpart" path="buttonblue" align="center" valign="center" width="90%" height="60%"/>
         </area>
-        <area condition="{blue3}" x="50%" y="90%" width="25%" height="10%" layer="3">
+        <area condition="{blue3}" x="50%" y="94%" width="25%" height="8%" layer="3">
             <drawtext align="center" valign="center" font="{regular}" fontsize="50%" color="{clrWhite}" text="{blue}" />
         </area>
         
-        <area condition="{red4}" x="75%" y="90%" width="25%" height="10%" layer="2">
+        <area condition="{red4}" x="75%" y="94%" width="25%" height="8%" layer="2">
             <drawimage imagetype="skinpart" path="buttonred" align="center" valign="center" width="90%" height="60%"/>
         </area>
-        <area condition="{red4}" x="75%" y="90%" width="25%" height="10%" layer="3">
+        <area condition="{red4}" x="75%" y="94%" width="25%" height="8%" layer="3">
             <drawtext align="center" valign="center" font="{regular}" fontsize="50%" color="{clrWhite}" text="{red}" />
         </area>
-        <area condition="{green4}" x="75%" y="90%" width="25%" height="10%" layer="2">
+        <area condition="{green4}" x="75%" y="94%" width="25%" height="8%" layer="2">
             <drawimage imagetype="skinpart" path="buttongreen" align="center" valign="center" width="90%" height="60%"/>
         </area>
-        <area condition="{green4}" x="60%" y="90%" width="25%" height="10%" layer="3">
+        <area condition="{green4}" x="75%" y="94%" width="25%" height="8%" layer="3">
             <drawtext align="center" valign="center" font="{regular}" fontsize="50%" color="{clrWhite}" text="{green}" />
         </area>
-        <area condition="{yellow4}" x="75%" y="90%" width="25%" height="10%" layer="2">
+        <area condition="{yellow4}" x="75%" y="94%" width="25%" height="8%" layer="2">
             <drawimage imagetype="skinpart" path="buttonyellow" align="center" valign="center" width="90%" height="60%"/>
         </area>
-        <area condition="{yellow4}" x="75%" y="90%" width="25%" height="10%" layer="3">
+        <area condition="{yellow4}" x="75%" y="94%" width="25%" height="8%" layer="3">
             <drawtext align="center" valign="center" font="{regular}" fontsize="50%" color="{clrWhite}" text="{yellow}" />
         </area>
-        <area condition="{blue4}" x="75%" y="90%" width="25%" height="10%" layer="2">
+        <area condition="{blue4}" x="75%" y="94%" width="25%" height="8%" layer="2">
             <drawimage imagetype="skinpart" path="buttonblue" align="center" valign="center" width="90%" height="60%"/>
         </area>
-        <area condition="{blue4}" x="75%" y="90%" width="25%" height="10%" layer="3">
+        <area condition="{blue4}" x="75%" y="94%" width="25%" height="8%" layer="3">
             <drawtext align="center" valign="center" font="{regular}" fontsize="50%" color="{clrWhite}" text="{blue}" />
         </area>
     </viewelement>
@@ -212,10 +212,10 @@
             <drawimage name="logo" imagetype="channellogo" path="{channelid}" x="1%" width="5%" height="90%" align="left" valign="center" />
             <drawtext x="{posx(logo)} + {width(logo)}+20" valign="center" font="{semibold}" fontsize="80%" color="{clrWhite}" text="{channelnumber} - {channelname}" />
         </area>
-        <area x="1%" y="10%" width="50%" height="80%" layer="2">
+        <area x="1%" y="10%" width="50%" height="84%" layer="2">
             <drawimage imagetype="skinpart" path="displaymendetailback" x="0" y="0" width="100%" height="100%" />
         </area>
-        <area x="55%" y="52%" width="43%" height="38%" layer="2">
+        <area x="55%" y="52%" width="43%" height="42%" layer="2">
             <drawimage imagetype="skinpart" path="displaymenucurrentback" x="0" y="0" width="100%" height="100%"/>
         </area>
         <area condition="not{ismovie}++not{isseries}" x="55%" y="52%" width="43%" height="20%" layer="3">
@@ -374,7 +374,7 @@
     <!-- just define as many tabs as needed -->
 
     <!-- TAB EPGINFO -->
-    <tab name="EPG Info" x="2%" y="11%" width="48%" height="78%" layer="3" scrollheight="{areaheight}/4">
+    <tab name="EPG Info" x="2%" y="11%" width="48%" height="82%" layer="3" scrollheight="{areaheight}/4">
         <drawtext x="0" y="0" font="{semibold}" fontsize="6%" color="{clrWhite}" text="{day} {date} {start} - {stop} ({duration} mins)" />
         <drawtext x="0" y="6%" width="100%" font="{semibold}" fontsize="9%" color="{clrWhite}" text="{title}" />
         <drawtext x="0" y="14%" width="100%" font="{regular}" fontsize="7%" color="{clrWhite}" text="{shorttext}" />
@@ -387,7 +387,7 @@
 
     </tab>
     <!-- TAB RERUNS -->
-    <tab name="{tr(reruns)}" x="2%" y="11%" width="48%" height="78%" layer="3" scrollheight="{areaheight}/4">
+    <tab name="{tr(reruns)}" x="2%" y="11%" width="48%" height="82%" layer="3" scrollheight="{areaheight}/4">
         <drawtext align="center" y="0" width="100%" name="title" font="{semibold}" fontsize="6%" color="{clrWhite}" text="{tr(rerunsof)} '{title}'" />
         <loop name="reruns" x="0" y="{height(title)} + 10" width="{areawidth}" orientation="vertical">
             <drawimage name="logo" condition="{reruns[channellogoexists]}" imagetype="channellogo" path="{reruns[channelid]}" x="0" width="10%" height="10%" />
@@ -399,7 +399,7 @@
         </loop>
     </tab>
     <!-- TAB ACTORS -->
-    <tab condition="{isseries}||{ismovie}" name="{tr(actors)}" x="2%" y="11%" width="48%" height="78%" layer="3" scrollheight="{areaheight}/4">
+    <tab condition="{isseries}||{ismovie}" name="{tr(actors)}" x="2%" y="11%" width="48%" height="82%" layer="3" scrollheight="{areaheight}/4">
         <drawtext align="center" name="title" y="0" font="{semibold}" fontsize="15%" color="{clrWhite}" text="{tr(actors)}" />
         <loop name="actors" x="0" y="{height(title)} + 10" width="{areawidth}" orientation="horizontal" columnwidth="{areawidth}*0.3" rowheight="{areawidth}*0.3*1.8" overflow="linewrap">
             <drawimage name="thumb" imagetype="image" path="{actors[thumb]}" x="20" y="0" width="{columnwidth}-40" height="{columnwidth} * {actors[thumbheight]} / {actors[thumbwidth]} - 40 * {actors[thumbheight]} / {actors[thumbwidth]}"/>
@@ -408,14 +408,14 @@
         </loop>
     </tab>
     <!-- TAB TVDBINFO -->
-    <tab condition="{isseries}" name="TvDBInfo" x="2%" y="11%" width="48%" height="78%" layer="3" scrollheight="{areaheight}/4">
+    <tab condition="{isseries}" name="TvDBInfo" x="2%" y="11%" width="48%" height="82%" layer="3" scrollheight="{areaheight}/4">
         <drawimage name="banner" imagetype="image" path="{seriesbanner1path}" align="center" y="10" width="{areawidth}*0.9" height="{areawidth} * 0.9 * {seriesbanner1height} / {seriesbanner1width}"/>
         <drawimage name="episodeimage" imagetype="image" path="{episodeimagepath}" x="{areawidth}*0.7" y="{height(banner)} + 20" width="{areawidth}*0.3" height="{areawidth} * 0.3 * {episodeimageheight} / {episodeimagewidth}"/>
         <drawimage name="seasonposter" imagetype="image" path="{seasonposterpath}" x="{areawidth}*0.7" y="{height(banner)} + {height(episodeimage)} + 30" width="{areawidth}*0.3" height="{areawidth} * 0.3 * {seasonposterheight} / {seasonposterwidth}"/>
         <drawtextbox x="0" y="{height(banner)} + 20" width="96%" float="topright" floatwidth="{width(seasonposter)} + 10" floatheight="{height(episodeimage)} + {height(seasonposter)} + 30" font="{regular}" fontsize="6%" color="{clrWhite}" text="{tr(episode)}: {episodetitle} ({tr(season)} {episodeseason}, {tr(episode)} {episodenumber}) &#10;&#10;{episodeoverview}|&#10;&#10;{tr(gueststars)}: {episodegueststars}||&#10;&#10;{tr(seriesfirstaired)}: {seriesfirstaired}||&#10;{tr(episodefirstaired)}: {episodefirstaired}||&#10;{tr(network)}: {seriesnetwork}||&#10;{tr(genre)}: {seriesgenre}||&#10;{tr(status)}: {seriesstatus}||&#10;{tr(rating)}: {seriesrating}||&#10;{tr(episoderating)}: {episoderating}&#10;|{seriesoverview}&#10;" />
     </tab>
     <!-- TAB SERIESGALERY -->
-    <tab condition="{isseries}" name="{tr(seriesgalery)}" x="2%" y="11%" width="48%" height="78%" layer="3" scrollheight="{areaheight}/4">
+    <tab condition="{isseries}" name="{tr(seriesgalery)}" x="2%" y="11%" width="48%" height="82%" layer="3" scrollheight="{areaheight}/4">
         <drawimage name="banner1" imagetype="image" path="{seriesbanner1path}" align="center" y="10" width="{areawidth}*0.9" height="{areawidth} * 0.9 * {seriesbanner1height} / {seriesbanner1width}"/>
         <drawimage name="fanart1" imagetype="image" path="{seriesfanart1path}" align="center" y="{posy(banner1)} + {height(banner1)} + 20" width="{areawidth}*0.9" height="{areawidth} * 0.9 * {seriesfanart1height} / {seriesfanart1width}"/>
         <drawimage name="banner2" imagetype="image" path="{seriesbanner2path}" align="center" y="{posy(fanart1)} + {height(fanart1)} + 20" width="{areawidth}*0.9" height="{areawidth} * 0.9 * {seriesbanner2height} / {seriesbanner2width}"/>
@@ -427,12 +427,12 @@
         <drawimage name="poster3" imagetype="image" path="{seriesposter3path}" align="center" y="{posy(poster2)} + {height(poster2)} + 20" width="{areawidth}*0.5" height="{areawidth} * 0.5 * {seriesposter3height} / {seriesposter3width}"/>
     </tab>
     <!-- TAB MOVIEDBINFO -->
-    <tab condition="{ismovie}" name="MovieDBInfo" x="2%" y="11%" width="48%" height="78%" layer="3" scrollheight="{areaheight}/4">
+    <tab condition="{ismovie}" name="MovieDBInfo" x="2%" y="11%" width="48%" height="82%" layer="3" scrollheight="{areaheight}/4">
         <drawimage name="poster" imagetype="image" path="{posterpath}" x="70%" y="10" width="{areawidth}*0.3" height="{areawidth} * 0.3 * {posterheight} / {posterwidth}"/>
         <drawtextbox x="0" y="10" width="96%" float="topright" floatwidth="{width(poster)} + 10" floatheight="{height(poster)} + 20" font="{regular}" fontsize="6%" color="{clrWhite}" text="{tr(originaltitle)}: {movieoriginalTitle}&#10;&#10;|{tr(genre)}: {moviegenres}&#10;&#10;||{movietagline}&#10;&#10;|{movieoverview}&#10;&#10;|{tr(budget)}: {moviebudget}&#10;||{tr(revenue)}: {movierevenue}&#10;&#10;||{tr(adult)}: {movieadult}&#10;||{tr(releasedate)}: {moviereleasedate}&#10;||{tr(runtime)}: {movieruntime} min&#10;||&#10;{tr(popularity)}: {moviepopularity}&#10;||&#10;{tr(voteaverage)}: {movievoteaverage}&#10;||&#10;{tr(homepage)}: {moviehomepage}|&#10;" />
     </tab>
     <!-- TAB MOVIEGALERY -->
-    <tab condition="{ismovie}" name="{tr(moviegalery)}" x="2%" y="11%" width="48%" height="78%" layer="3" scrollheight="{areaheight}/4">
+    <tab condition="{ismovie}" name="{tr(moviegalery)}" x="2%" y="11%" width="48%" height="82%" layer="3" scrollheight="{areaheight}/4">
         <drawimage name="fanart" imagetype="image" path="{fanartpath}" align="center" y="10" width="{areawidth}*0.9" height="{areawidth} * 0.9 * {fanartheight} / {fanartwidth}"/>
         <drawimage name="poster" imagetype="image" path="{posterpath}" align="center" y="{height(fanart)} + 30" width="{areawidth}*0.6" height="{areawidth} * 0.6 * {posterheight} / {posterwidth}"/>
         <drawimage condition="{movieiscollection}" name="collectionfanart" imagetype="image" path="{collectionfanartpath}" align="center" y="{posy(poster)} + {height(poster)} + 20" width="{areawidth}*0.9" height="{areawidth} * 0.9 * {collectionfanartheight} / {collectionfanartwidth}"/>
