@@ -25,7 +25,7 @@
         <color name="clrWhite">FFFFFFFF</color>
         <color name="clrGray">FFBBBBBB</color>
         <color name="clrRedTrans">00FF0000</color>
-        <color name="clrBlackTrans">00000000</color>
+        <color name="clrBlackTrans">BB000000</color>
         <color name="clrDevice">FFFFFFFF</color>
     </colors>
     <!--
