@@ -16,6 +16,9 @@
         <area x="{areawidth}*0.865" y="{areawidth}*0.005" width="13%" height="{areawidth}*0.13" layer="3">
             <drawimage imagetype="skinpart" path="watchback" x="0" y="0" width="100%" height="100%"/>
         </area>
+        <area x="0" y="80%" width="100%" height="100%" layer="1">
+            <drawimage imagetype="skinpart" path="tvguidefooter" x="0" y="0" width="100%" height="100%"/>
+        </area>
     </viewelement>
 
     <viewelement name="background_ver">
@@ -30,6 +33,9 @@
         </area>
         <area x="{areawidth}*0.865" y="{areawidth}*0.005" width="13%" height="{areawidth}*0.13" layer="3">
             <drawimage imagetype="skinpart" path="watchback" x="0" y="0" width="100%" height="100%"/>
+        </area>
+        <area x="0" y="80%" width="100%" height="100%" layer="1">
+            <drawimage imagetype="skinpart" path="tvguidefooter" x="0" y="0" width="100%" height="100%"/>
         </area>
     </viewelement>
 
@@ -310,7 +316,7 @@
         <area condition="{green4}" x="75%" y="94%" width="25%" height="8%" layer="2">
             <drawimage imagetype="skinpart" path="buttongreen" align="center" valign="center" width="90%" height="60%"/>
         </area>
-        <area condition="{green4}" x="60%" y="94%" width="25%" height="8%" layer="3">
+        <area condition="{green4}" x="75%" y="94%" width="25%" height="8%" layer="3">
             <drawtext align="center" valign="center" font="{regular}" fontsize="50%" color="{clrWhite}" text="{green}" />
         </area>
         <area condition="{yellow4}" x="75%" y="94%" width="25%" height="8%" layer="2">
