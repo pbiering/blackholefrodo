@@ -7,7 +7,7 @@
         <area x="0" y="0" width="100%" height="20%" layer="1">
             <drawimage imagetype="skinpart" path="tvguideheader" x="0" y="0" width="100%" height="100%"/>
         </area>
-        <area x="5%" y="20%" width="8%" height="5%" layer="1">
+        <area x="0%" y="20%" width="13%" height="5%" layer="1">
             <drawimage imagetype="skinpart" path="tvguide_timelinegrid_dark_hor" x="0" y="0" width="100%" height="100%"/>
         </area>
         <area x="74%" y="0" width="26%" height="46%" layer="2">
@@ -88,8 +88,8 @@
 
     <viewelement name="header_ver">
         <areascroll condition="not{isdummy}++not{hasposter}" orientation="vertical" mode="forthandback" delay="1000" scrollspeed="medium" x="1%" y="1%" width="58%" height="18%" layer="2">
-            <drawtext x="0" y="0" font="{semibold}" width="100%" fontsize="20%" color="{clrWhite}" text="{day} {daynumeric}.{month} {start} - {stop}" />
-            <drawtext x="0" y="20%" font="{semibold}" width="100%" fontsize="25%" color="{clrWhite}" text="{title}" />
+            <drawtext x="0" y="0" font="{semibold}" width="100%" fontsize="10%" color="{clrWhite}" text="{day} {daynumeric}.{month} {start} - {stop}" />
+            <drawtext x="0" y="20%" font="{semibold}" width="100%" fontsize="20%" color="{clrWhite}" text="{title}" />
             <drawtextbox name="shorttext" x="0" y="45%" width="100%" font="{regular}" fontsize="15%" color="{clrWhite}" text="{shorttext}" />
             <drawtextbox x="0" y="{posy(shorttext)} + {height(shorttext)}" width="100%" font="{regular}" fontsize="15%" color="{clrWhite}" text="{description}" />
         </areascroll>
@@ -97,13 +97,13 @@
             <drawimage imagetype="image" path="{posterpath}" x="0" y="0" width="100%" height="100%"/>
         </area>
         <areascroll condition="not{isdummy}++{hasposter}" orientation="vertical" mode="forthandback" delay="1000" scrollspeed="medium" x="12%" y="1%" width="46%" height="18%" layer="2">
-            <drawtext x="0" y="0" font="{semibold}" width="100%" fontsize="20%" color="{clrWhite}" text="{day} {daynumeric}.{month} {start} - {stop}" />
-            <drawtext x="0" y="20%" font="{semibold}" width="100%" fontsize="25%" color="{clrWhite}" text="{title}" />
+            <drawtext x="0" y="0" font="{semibold}" width="100%" fontsize="10%" color="{clrWhite}" text="{day} {daynumeric}.{month} {start} - {stop}" />
+            <drawtext x="0" y="20%" font="{semibold}" width="100%" fontsize="20%" color="{clrWhite}" text="{title}" />
             <drawtextbox name="shorttext" x="0" y="45%" width="100%" font="{regular}" fontsize="15%" color="{clrWhite}" text="{shorttext}" />
             <drawtextbox x="0" y="{posy(shorttext)} + {height(shorttext)}" width="100%" font="{regular}" fontsize="15%" color="{clrWhite}" text="{description}" />
         </areascroll>
         <area condition="{isdummy}" x="1%" y="1%" width="58%" height="18%" layer="2">
-            <drawtext x="0" y="20%" font="{semibold}" width="100%" fontsize="35%" color="{clrWhite}" text="{title}" />
+            <drawtext x="0" y="20%" font="{semibold}" width="100%" fontsize="20%" color="{clrWhite}" text="{title}" />
         </area>
     </viewelement>
 
@@ -415,7 +415,7 @@
         </area>
     </grid>
 
-    <grid name="timeline_ver" x="0" y="35%" width="8%" height="55%">
+    <grid name="timeline_ver" x="0" y="35%" width="8%" height="60%">
         <area layer="1">
             <drawimage condition="{fullhour}" imagetype="skinpart" path="tvguide_timelinegrid_bright_ver" x="0" y="0" width="100%" height="100%"/>
             <drawimage condition="not{fullhour}" imagetype="skinpart" path="tvguide_timelinegrid_dark_ver" x="0" y="0" width="100%" height="100%"/>
@@ -432,14 +432,11 @@
     {channelid}              id of channel to display channel logo
     {channellogoexists}       true if channel logo exists
     -->
-    <grid name="channels_hor" x="5%" y="25%" width="8%" height="65%">
+    <grid name="channels_hor" x="5%" y="25%" width="8%" height="70%">
         <area layer="1">
             <drawimage imagetype="skinpart" path="tvguide_grid_active_hor" x="0" y="0" width="100%" height="100%"/>
         </area>
         <area layer="2">
-            <!-- <drawtext x="1%" valign="center" font="{light}" fontsize="45%" color="{clrWhite}" text="{number}" />
-            <drawimage condition="{channellogoexists}" imagetype="channellogo" path="{channelid}" x="19%" valign="center" width="80%" height="80%" />
-            <drawtext condition="not{channellogoexists}" x="19%" valign="center" width="94%" font="{light}" fontsize="45%" color="{clrWhite}" text="{name}" /> -->
             <drawimage condition="{channellogoexists}" imagetype="channellogo" path="{channelid}" valign="center" x="10%" width="80%" height="80%" />
             <drawtext condition="not{channellogoexists}" valign="center" x="3%" width="94%" font="{light}" fontsize="45%" color="{clrWhite}" text="{name}" />
         </area>
@@ -459,7 +456,7 @@
     {color}                  alternates grid by grid from true to false
     {group}                  name of channel group
     -->
-    <grid name="channelgroups_hor" x="0" y="25%" width="5%" height="65%">
+    <grid name="channelgroups_hor" x="0" y="25%" width="5%" height="70%">
         <area layer="1">
             <drawimage condition="{color}" imagetype="skinpart" path="tvguide_grid_bright_ver" x="0" y="0" width="100%" height="100%"/>
             <drawimage condition="not{color}" imagetype="skinpart" path="tvguide_grid_dark_ver" x="0" y="0" width="100%" height="100%"/>
@@ -489,7 +486,7 @@
     {start}                  start time in hh:mm
     {stop}                   stop time in hh:dd
     -->
-    <grid name="schedules_hor" x="13%" y="25%" width="87%" height="65%">
+    <grid name="schedules_hor" x="13%" y="25%" width="87%" height="70%">
         <area layer="1">
             <drawimage condition="{color}++not{current}" imagetype="skinpart" path="tvguide_grid_bright_hor" x="0" y="0" width="100%" height="100%"/>
             <drawimage condition="not{color}++not{current}" imagetype="skinpart" path="tvguide_grid_dark_hor" x="0" y="0" width="100%" height="100%"/>
@@ -505,15 +502,15 @@
         </area>
     </grid>
 
-    <grid name="schedules_ver" x="8%" y="35%" width="92%" height="55%">
+    <grid name="schedules_ver" x="8%" y="35%" width="92%" height="60%">
         <area layer="1">
             <drawimage condition="{color}++not{current}" imagetype="skinpart" path="tvguide_grid_bright_ver" x="0" y="0" width="100%" height="100%"/>
             <drawimage condition="not{color}++not{current}" imagetype="skinpart" path="tvguide_grid_dark_ver" x="0" y="0" width="100%" height="100%"/>
             <drawimage condition="{current}" imagetype="skinpart" path="tvguide_grid_active_ver" x="0" y="0" width="100%" height="100%"/>
         </area>
         <area layer="2">
-            <drawtext condition="not{dummy}" x="2%" y="0" width="96%" font="{light}" fontsize="{areawidth}*0.16" color="{clrWhite}" text="{start} - {stop}" />
-            <drawtextbox name="title" condition="not{dummy}" x="2%" y="{areawidth}*0.16" width="96%" font="{regular}" fontsize="{areawidth}*0.15" color="{clrWhite}" text="{title}" />
+            <drawtext condition="not{dummy}" x="2%" y="0" width="96%" font="{light}" fontsize="{areawidth}*0.1" color="{clrWhite}" text="{start} - {stop}" />
+            <drawtextbox name="title" condition="not{dummy}" x="2%" y="{areawidth}*0.1" width="96%" font="{regular}" fontsize="{areawidth}*0.12" color="{clrWhite}" text="{title}" />
             <drawtextbox condition="not{dummy}" x="2%" y="{posy(title)} + {height(title)} - {areawidth}*0.1" width="96%" height="{areaheight}*1.1 - {posy(title)} - {height(title)}" font="{light}" fontsize="{areawidth}*0.12" color="{clrWhite}" text="{shorttext}" />
             <drawtextbox condition="{dummy}" x="2%" y="5%" width="96%" font="{regular}" fontsize="{areawidth}*0.2" color="{clrWhite}" text="{title}" />
             <drawimage condition="{timer}" imagetype="icon" path="ico_rec_on" x="82%" y="{areaheight}-{areawidth}*0.18" width="15%" height="{areawidth}*0.15"/>
