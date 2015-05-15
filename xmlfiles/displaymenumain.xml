@@ -81,8 +81,9 @@
         </area>
         <area condition="{numtimers}" x="55%" y="71%" width="44%" height="19%" layer="2">
             <loop name="timers" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/4" rowheight="{areaheight}" overflow="cut">
-                <drawimage  cache="true" name="logo" imagetype="channellogo" path="{timers[channelid]}" width="{columnwidth}-15" height="40%" align="center" y="10" />
-                <drawrectangle condition="{timers[recording]}" x="0" y="{height(logo)}+10" width="{columnwidth}-5" height="{rowheight} - {height(logo)} - 20" color="{clrRedTrans}" />
+                <drawimage cache="true" name="logo" imagetype="channellogo" path="{timers[channelid]}" width="{columnwidth}-15" height="40%" align="center" y="10" />
+<!--                <drawrectangle condition="{timers[recording]}" x="0" y="{height(logo)}+10" width="{columnwidth}-5" height="{rowheight} - {height(logo)} - 20" color="{clrRedTrans}" /> -->
+                <drawimage condition="{timers[recording]}" animtype="blink" animfreq="500" imagetype="icon" path="ico_rec_on" x="{columnwidth}*0.75" y="{columnwidth}*0.05" width="{columnwidth}*0.2" height="{columnwidth}*0.2"/>
                 <drawtextbox x="5" y="{height(logo)} + 10" width="{columnwidth}-10" align="center" maxlines="2" font="{regular}" fontsize="15%" color="{clrWhite}" text="{timers[title]}" />
                 <drawtext align="center" y="75%" font="{regular}" fontsize="20%" color="{clrWhite}" text="{timers[datetime]}" />
             </loop>
@@ -97,7 +98,7 @@
     {discalert}               true if disc usage is > 95%
     {vdrusagestring}          localized VDR internal usage string
     -->
-    <discusage>
+    <discusage detached="true" delay="100" fadetime="0">
         <area x="55%" y="51%" width="44%" height="19%" layer="5">
             <drawimage imagetype="skinpart" path="tachohands/perc_{usedpercent}" x="{areawidth}*0.025" y="5%" width="20%" height="{areawidth}*0.20"/>
         </area>
@@ -143,7 +144,7 @@
     {load}                      current system load
     {loadhand}                  system load for tacho hand (between 0 and 2.5 in 0.025 steps multiplied by 1000, >2.5 is always 2525)
     -->
-    <systemload>
+    <systemload detached="true" delay="100" fadetime="0">
         <area x="55%" y="51%" width="44%" height="19%" layer="5">
             <drawimage imagetype="skinpart" path="tachohands/load_{loadhand}" x="{areawidth}*0.28" y="5%" width="20%" height="{areawidth}*0.20"/>
         </area>
@@ -156,7 +157,7 @@
     {cputemp}                  current cpu temperature in °C
     {gputemp}                  current gpu temperature in °C
     -->
-    <temperatures>
+    <temperatures detached="true" delay="100" fadetime="0">
         <area x="55%" y="51%" width="44%" height="19%" layer="5">
             <drawimage condition="gt({cputemp}, 80)" imagetype="skinpart" path="tachohands/temp_81"        x="{areawidth}*0.53" y="5%" width="20%" height="{areawidth}*0.2"/>
             <drawimage condition="lt({cputemp}, 81)" imagetype="skinpart" path="tachohands/temp_{cputemp}" x="{areawidth}*0.53" y="5%" width="20%" height="{areawidth}*0.2"/>
@@ -215,16 +216,16 @@
                 <drawimage condition="not{current}" imagetype="skinpart" path="menubutton" x="0" y="0" width="100%" height="100%"/>
                 <drawimage condition="{current}" imagetype="skinpart" path="menubuttonactive" x="0" y="0" width="100%" height="100%"/>
             </area>
-            <area x="0" width="100%" layer="3">
+            <area condition="{showmainmenuicons}" x="1%" width="20%" layer="3">
                 <drawimage imagetype="menuicon" path="{icon}" x="1%" valign="center" width="{areaheight}*0.8" height="{areaheight}*0.8"/>
             </area>
-            <area x="0" width="100%" layer="3">
-                <!--
-                <drawtext condition="not{current}" x="1%" width="98%" valign="center" font="{regular}" fontsize="80%" color="{clrGray}" text="{number} {label} " />
-                <drawtext condition="{current}" x="1%" width="98%" valign="center" font="{regular}" fontsize="80%" color="{clrWhite}" text="{number} {label} " />
-                -->
-                <drawtext condition="not{current}" x="10%" width="98%" valign="center" font="{regular}" fontsize="80%" color="{clrGray}" text="{label} " />
-                <drawtext condition="{current}" x="10%" width="98%" valign="center" font="{regular}" fontsize="80%" color="{clrWhite}" text="{label} " />
+            <area condition="not{showmainmenuicons}" x="0" width="100%" layer="3">
+                <drawtext condition="not{current}" x="1%" width="98%" valign="center" font="{regular}" fontsize="80%" color="{clrGray}" text="{label} " />
+                <drawtext condition="{current}" x="1%" width="98%" valign="center" font="{regular}" fontsize="80%" color="{clrWhite}" text="{label} " />
+            </area>
+            <area condition="{showmainmenuicons}" x="0" width="100%" layer="3">
+                <drawtext condition="not{current}" x="{areaheight} + {areawidth}*0.02" width="{areawidth} - {areaheight}" valign="center" font="{regular}" fontsize="80%" color="{clrGray}" text="{label} " />
+                <drawtext condition="{current}" x="{areaheight} + {areawidth}*0.02" width="{areawidth} - {areaheight}" valign="center" font="{regular}" fontsize="80%" color="{clrWhite}" text="{label} " />
             </area>
         </listelement>
         <!-- additional element which is drawn for current element -->
