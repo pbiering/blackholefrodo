@@ -18,6 +18,7 @@
         <parameter type="int" name="nummenuitems" min="6" max="30" displaytext="{tr(nummenuitems)}">14</parameter>
         <parameter type="int" name="nummenuitemsdefault" min="6" max="30" displaytext="{tr(nummenuitemsdefault)}">18</parameter>
         <parameter type="bool" name="showdevices" displaytext="{tr(showdevices)}">1</parameter>
+        <parameter type="bool" name="showecminfo" displaytext="{tr(showecminfo)}">0</parameter>
         <parameter type="bool" name="showchannellogoback" displaytext="{tr(showchannellogoback)}">0</parameter>
         <parameter type="bool" name="showposter" displaytext="{tr(showpostertext)}">1</parameter>
         <parameter type="bool" name="showmainmenuicons" displaytext="{tr(showmainmenuicons)}">1</parameter>
@@ -36,6 +37,10 @@
         <token name="tr(showdevices)">
             <trans lang="en_EN">Show DVB device info when switching channel</trans>
             <trans lang="de_DE">DVB Karten Info beim Umschalten anzeigen</trans>
+        </token>
+        <token name="tr(showecminfo)">
+            <trans lang="en_EN">Show ECM info when switching channel</trans>
+            <trans lang="de_DE">ECM Informationen beim Umschalten anzeigen</trans>
         </token>
         <token name="tr(showchannellogoback)">
             <trans lang="en_EN">Show channellogos background when switching channel</trans>
