@@ -98,7 +98,7 @@
     {discalert}               true if disc usage is > 95%
     {vdrusagestring}          localized VDR internal usage string
     -->
-    <discusage detached="true" delay="100" fadetime="0">
+    <discusage>
         <area x="55%" y="51%" width="44%" height="19%" layer="5">
             <drawimage imagetype="skinpart" path="tachohands/perc_{usedpercent}" x="{areawidth}*0.025" y="5%" width="20%" height="{areawidth}*0.20"/>
         </area>
@@ -126,25 +126,13 @@
     {devices[source]}           source of the currently tuned channel
     -->
     <devices>
-    <!--    <area x="56%" y="75%" width="25%" height="24%" layer="2">
-            <loop name="devices" x="0" y="0" orientation="horizontal" columnwidth="{areawidth}/2" rowheight="{areaheight}" overflow="cut">
-                <drawtext x="0" y="0" font="{regular}" fontsize="40%" color="{clrWhite}" text="{devices[num]}: {devices[type]}" />
-                <drawtext condition="{devices[hascam]}" align="right" y="0" font="{regular}" fontsize="40%" color="{clrWhite}" text="(CAM {devices[cam]})" />
-                <drawtext condition="{devices[recording]} ++ {devices[livetv]}" x="0" y="35%" font="{regular}" fontsize="30%" width="100%" color="{clrRed}" text="LiveTV, Recording ({devices[channelname]}) " />
-                <drawtext condition="{devices[recording]} ++ not{devices[livetv]}" x="0" y="35%" font="{regular}" fontsize="30%" width="100%" color="{clrRed}" text="Recording ({devices[channelname]}) " />
-                <drawtext condition="not{devices[recording]} ++ {devices[livetv]}" x="0" y="35%" font="{regular}" fontsize="30%" width="100%" color="{clrWhite}" text="LiveTV ({devices[channelname]}) " />
-                <drawrectangle  x="0" y="70%" width="{areawidth}/2 * {devices[signalstrength]} / 100 - 10 * {devices[signalstrength]} / 100" height="{rowheight}/15" color="{clrWhite}" />
-                <drawrectangle  x="0" y="85%" width="{areawidth}/2 * {devices[signalquality]} / 100 - 10 * {devices[signalquality]} / 100" height="{rowheight}/15" color="{clrWhite}" />
-            </loop>  
-        </area>
-    -->
     </devices>
 
     <!-- Available Variables systemload:
     {load}                      current system load
     {loadhand}                  system load for tacho hand (between 0 and 2.5 in 0.025 steps multiplied by 1000, >2.5 is always 2525)
     -->
-    <systemload detached="true" delay="100" fadetime="0">
+    <systemload>
         <area x="55%" y="51%" width="44%" height="19%" layer="5">
             <drawimage imagetype="skinpart" path="tachohands/load_{loadhand}" x="{areawidth}*0.28" y="5%" width="20%" height="{areawidth}*0.20"/>
         </area>
@@ -157,7 +145,7 @@
     {cputemp}                  current cpu temperature in °C
     {gputemp}                  current gpu temperature in °C
     -->
-    <temperatures detached="true" delay="100" fadetime="0">
+    <temperatures>
         <area x="55%" y="51%" width="44%" height="19%" layer="5">
             <drawimage condition="gt({cputemp}, 80)" imagetype="skinpart" path="tachohands/temp_81"        x="{areawidth}*0.53" y="5%" width="20%" height="{areawidth}*0.2"/>
             <drawimage condition="lt({cputemp}, 81)" imagetype="skinpart" path="tachohands/temp_{cputemp}" x="{areawidth}*0.53" y="5%" width="20%" height="{areawidth}*0.2"/>
