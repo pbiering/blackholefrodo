@@ -12,7 +12,10 @@
     <menuitems x="1%" y="10%" orientation="vertical" width="98%" height="84%" align="center" numlistelements="{nummenuitemsmain}">
         <!-- Available Variables recordings menu listelement:
         {nummenuitem}           number of item in list, starts with 1
-        {name}                  Name of recording
+        {name}                  Real Name of recording (Name of Recording Folder)
+        {epgname}               Name of recording (Name from EPG)
+        {shorttext}             Short Text of recording
+        {description}           Descrption of recording
         {date}                  Date of recording
         {time}                  Time of recording
         {daynumeric}            day as number
@@ -26,6 +29,8 @@
         {durationeventminutes}  event duration, rest of minutes
         {current}               true if item is currently selected
         {new}                   true if recording is new
+        {percentseen}           percent already watched, -1 for VDR < 2.1.8
+        {watched}               true if percentseen > 85% including MarginStop of not cutted recording
         {cutted}                true if recording is cutted
         {folder}                true if item is a folder
         {numrecordingsfolder}   if item is a folder, number of recordings in this folder
@@ -34,6 +39,10 @@
         {thumbnailbwidth}       width of scraped poster thumbnail
         {thumbnailheight}       height of scraped poster thumbnail
         {thumbnailpath}         absolute path of scraped poster thumbnail
+        {hasposter}             true if a scraped poster is available for recording
+        {posterwidth}           width of scraped poster
+        {posterheight}          height of scraped poster
+        {posterpath}            absolute path of scraped poster
         -->
         <listelement>
             <area x="0" width="51%" layer="2">
@@ -45,7 +54,7 @@
                 <drawtext condition="{current}" x="0" y="5%" font="{regular}" fontsize="35%" color="{clrWhite}" text="{date} - {time}, {duration} min" />
             </area>
             <area condition="not{folder}" x="1%" width="4%" layer="3">
-                <drawimage condition="{hasposterthumbnail}" imagetype="image" path="{thumbnailpath}" x="8" width="0.8*{areaheight} * {thumbnailbwidth} / {thumbnailheight}" height="0.8*{areaheight}" valign="center" />
+                <drawimage condition="{hasposterthumbnail}" imagetype="image" path="{thumbnailpath}" x="0" width="0.8*{areaheight}" height="80%" valign="center" />
                 <drawimage condition="not{hasposterthumbnail}" imagetype="icon" path="ico_recording" x="0" width="0.8*{areaheight}" height="80%" valign="center" />
             </area>
             <area condition="not{folder}" x="5%" width="45%" layer="3">
@@ -71,9 +80,10 @@
         {menuitemy}             y position of according menu item
         {menuitemwidth}         width of according menu item
         {menuitemheight}        height of according menu item
-        {name}                  Name of recording
+        {name}                  Real Name of recording (Name of Recording Folder)
+        {epgname}               Name of recording (Name from EPG)
         {shorttext}             Short Text of recording
-        {description}           Descrption of recording        
+        {description}           Descrption of recording
         {date}                  Date of recording
         {time}                  Time of recording
         {daynumeric}            day as number
@@ -84,7 +94,10 @@
         {durationminutes}       real duration, rest of minutes
         {durationevent}         duration of corresponding event in minutes
         {durationeventhours}    event duration, full hours
-        {durationeventminutes}  event duration, rest of minutes        {new}                   true if recording is new
+        {durationeventminutes}  event duration, rest of minutes
+        {new}                   true if recording is new
+        {percentseen}           percent already watched, -1 for VDR < 2.1.8
+        {watched}               true if percentseen > 85% including MarginStop of not cutted recording
         {cutted}                true if recording is cutted
         {folder}                true if item is a folder
         {numrecordingsfolder}   if item is a folder, number of recordings in this folder
@@ -93,6 +106,10 @@
         {posterwidth}           width of scraped poster
         {posterheight}          height of scraped poster
         {posterpath}            absolute path of scraped poster
+        {hasbanner}             true if a scraped banner is available for this element
+        {bannerwidth}           width of scraped banner
+        {bannerheight}          height of scraped banner
+        {bannerpath}            absolute path of scraped banner
         -->
         <currentelement delay="500" fadetime="0">
             <area x="55%" y="52%" width="45%" height="48%" layer="2">
