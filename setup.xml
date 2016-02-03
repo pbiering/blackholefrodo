@@ -21,6 +21,7 @@
         <parameter type="bool" name="showrecording" displaytext="{tr(showrecording)}">0</parameter>
         <parameter type="bool" name="showsubtitle" displaytext="{tr(showsubtitle)}">0</parameter>
         <parameter type="int" name="fadetime" min="0" max="1000" displaytext="{tr(fadetext)}">300</parameter>
+        <parameter type="int" name="shiftdelaymenu" min="0" max="1000" displaytext="{tr(shiftdelaymenu)}">0</parameter>
         <parameter type="int" name="shifttimechannel" min="0" max="1000" displaytext="{tr(shiftchanneltext)}">0</parameter>
         <parameter type="int" name="shifttimevolume" min="0" max="1000" displaytext="{tr(shiftvolumetext)}">0</parameter>
         <parameter type="int" name="shifttimereplay" min="0" max="1000" displaytext="{tr(shiftreplaytext)}">0</parameter>
@@ -71,6 +72,10 @@
             <trans lang="en_EN">Fade time in ms</trans>
             <trans lang="de_DE">Einblendzeit in ms</trans>
             <trans lang="fi_FI">Häivytyksen kesto [ms]</trans>
+        </token>
+	<token name="tr(shiftdelaymenu)">
+            <trans lang="en_EN">Shift time for menu [ms]</trans>
+            <trans lang="de_DE">Einblendzeit für Menü [ms]</trans>
         </token>
         <token name="tr(shiftchanneltext)">
             <trans lang="en_EN">Shift time for Channel Display [ms]</trans>
