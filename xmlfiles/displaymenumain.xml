@@ -74,6 +74,7 @@
     {timers[channelnumber]}      number of channel
     {timers[channelid]}          ChannelID of channel
     {timers[channellogoexists]}  true if channel logo exists
+    {timers[isremotetimer]}      true if timer is a remote timer from remotetimers plugin
     -->
     <timers>
         <area condition="not{numtimers}" x="55%" y="71%" width="44%" height="19%" layer="2">
@@ -89,6 +90,22 @@
             </loop>
         </area>
     </timers>
+
+    <!-- Available Variables lastrecordings: 10 newest recordings
+    {numtimers}                  number of active timers (to align lastrecordings at timers viewelement)
+    {recordings[]}               array with 10 newest recordings
+    {recordings[name]}           name of recording
+    {recordings[seriesname]}     series name if available
+    {recordings[date]}           date of recording in dd.mm.yy
+    {recordings[time]}           time of recording in hh:mm
+    {recordings[duration]}       duration of recording in minutes
+    {recordings[hasposter]}      true if poster available
+    {recordings[posterpath]}     path of poster if available
+    {recordings[posterwidth]}    width of poster
+    {recordings[posterheight]}   height of poster
+    -->
+    <lastrecordings detached="false">
+    </lastrecordings>
 
     <!-- Available Variables discusage:
     {freetime}                available disc capacity in hh:mm
@@ -108,6 +125,8 @@
     </discusage>
 
     <!-- Available Variables devices:
+    signalstrength and -quality are only set if not mode="light" is used in <devices>
+    execution slow, should be detached
     {numdevices}                number of available devices
     {devices[]}                 array with available devices
     {devices[num]}              number of current device
@@ -121,7 +140,7 @@
     {devices[signalquality]}    signalstrength of devcie
     {devices[channelnumber]}    number of the currently tuned channel
     {devices[channelname]}      name of the currently tuned channel
-    {devices[channellogoexists]} true if a channel logo exists 
+    {devices[channellogoexists]} true if a channel logo exists
     {devices[channelid]}        ID of the currently tuned channel
     {devices[source]}           source of the currently tuned channel
     -->
@@ -130,7 +149,6 @@
 
     <!-- Available Variables systemload:
     {load}                      current system load
-    {loadhand}                  system load for tacho hand (between 0 and 2.5 in 0.025 steps multiplied by 1000, >2.5 is always 2525)
     -->
     <systemload>
         <area x="55%" y="51%" width="44%" height="19%" layer="5">
@@ -140,6 +158,22 @@
             <drawtext align="center" y="85%" font="{regular}" fontsize="15%" color="{clrWhite}" text="Load: {load}" />
         </area>
     </systemload>
+
+    <!-- Available Variables systemmemory:
+    {totalmem}                  total system memory in MB
+    {usedmem}                   currently used system memory in MB
+    {usedmempercent}            currently used system memory in Percent
+    -->
+    <systemmemory>
+    </systemmemory>
+
+    <!-- Available Variables vdrstatistics:
+    execution slow, should be detached
+    {vdrcpu}                   current cpu usage of vdr process in percent
+    {vdrmem}                   current mem usage of vdr process in percent
+    -->
+    <vdrstatistics>
+    </vdrstatistics>
 
     <!-- Available Variables tempreatures:
     {cputemp}                  current cpu temperature in °C
