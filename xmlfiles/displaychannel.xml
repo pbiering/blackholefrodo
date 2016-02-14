@@ -119,7 +119,8 @@
     -->
     <statusinfo>
         <area x="17%" y="95%" width="67%" height="4%" layer="3">
-            <drawimage condition="{isDolby}" imagetype="icon" path="ico_dolby" x="{areaheight}*6 + 20" y="0" width="{areaheight}*3" height="{areaheight}"/>
+            <drawimage condition="not{isRadio}++{isDolby}" imagetype="icon" path="ico_dolby" x="{areaheight}*6 + 20" y="0" width="{areaheight}*3" height="{areaheight}"/>
+            <drawimage condition="{isRadio}" imagetype="icon" path="ico_radio" x="{areaheight}*6 + 20" y="0" width="{areaheight}*3" height="{areaheight}"/>
             <drawimage condition="{hasVT}" imagetype="icon" path="ico_videotext" x="{areaheight}*9 + 30" y="0" width="{areaheight}" height="{areaheight}"/>
             <drawimage condition="{isEncrypted}" imagetype="icon" path="ico_crypted" x="{areaheight}*10 + 40" y="0" width="{areaheight}*2" height="{areaheight}"/>
             <drawimage condition="{isRecording}" animtype="blink" animfreq="500" imagetype="icon" path="ico_rec_on" x="{areaheight}*12 + 50" y="0" width="{areaheight}" height="{areaheight}"/>
@@ -191,6 +192,22 @@
     {signalquality}                     SNR value of currently displayed channel
     -->
     <signalquality>
+    <!--
+      <area condition="{showdevices}" x="65%" y="95%" width="10%" height="4%" layer="3">
+        <drawtext name="snr" x="0" y="0" font="{regular}" fontsize="60%" color="{clrWhite}" text="SNR: " />
+        <drawtext x="{posx(snr)}+{width(snr)}" y="0" font="{regular}" fontsize="60%" color="{clrWhite}" text="{signalquality}%" />
+        <drawtext name="str" x="0" y="18" font="{regular}" fontsize="60%" color="{clrWhite}" text="STR: " />
+        <drawtext x="{posx(str)}+{width(str)}" y="18" font="{regular}" fontsize="60%" color="{clrWhite}" text="{signalstrength}%" />
+      </area>
+      <area condition="{showdevices}" x="50%" y="95%" width="15%" height="4%" layer="2">
+        <drawrectangle x="2" y="0%" width="100%"  height="45%" color="{clrBlackTrans}" />
+        <drawrectangle x="2" y="50%" width="100%"  height="45%" color="{clrBlackTrans}" />
+      </area>        
+      <area condition="{showdevices}" x="50%" y="95%" width="15%" height="4%" layer="3" background="true">
+        <drawimage imagetype="skinpart" path="signal" x="2" y="0%" width="{areawidth} * {signalquality} / 100 - 10 * {signalquality} / 100" height="45%"/>
+        <drawimage imagetype="skinpart" path="signal" x="2" y="50%" width="{areawidth} * {signalstrength} / 100 - 10 * {signalstrength} / 100" height="45%"/>
+      </area>
+    -->
     </signalquality>
 
     <!-- Available Variables devices:
