@@ -20,6 +20,7 @@
         <parameter type="bool" name="showchannellogoback" displaytext="{tr(showchannellogoback)}">0</parameter>
         <parameter type="bool" name="showrecording" displaytext="{tr(showrecording)}">0</parameter>
         <parameter type="bool" name="showsubtitle" displaytext="{tr(showsubtitle)}">0</parameter>
+        <parameter type="bool" name="showweather" displaytext="{tr(showweather)}">1</parameter>
         <parameter type="int" name="fadetime" min="0" max="1000" displaytext="{tr(fadetext)}">300</parameter>
         <parameter type="int" name="shiftdelaymenu" min="0" max="1000" displaytext="{tr(shiftdelaymenu)}">0</parameter>
         <parameter type="int" name="shifttimechannel" min="0" max="1000" displaytext="{tr(shiftchanneltext)}">0</parameter>
@@ -40,6 +41,10 @@
             <trans lang="en_EN">Show DVB device info when switching channel</trans>
             <trans lang="de_DE">DVB Karten Info beim Umschalten anzeigen</trans>
             <trans lang="fi_FI">Näytä DVB-tiedot kanavanvaihdossa</trans>
+        </token>
+        <token name="tr(showweather)">
+            <trans lang="en_EN">Show weather info</trans>
+            <trans lang="de_DE">Zeige Wetter Info</trans>
         </token>
         <token name="tr(showecminfo)">
             <trans lang="en_EN">Show ECM info when switching channel</trans>
