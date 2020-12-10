@@ -18,7 +18,7 @@
         <color name="clrRedTrans">00FF0000</color>
         <color name="clrBlackTrans">BB000000</color>
         <color name="clrBlueMenu">FF00284A</color>
-        <color name="clrDevice">FF999999</color>          
+        <color name="clrDevice">FF888888</color>
     </colors>
     <!--
     these variables can be used everywhere in the templates
