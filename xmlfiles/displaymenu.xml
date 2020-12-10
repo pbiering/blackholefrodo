@@ -80,7 +80,7 @@
             <drawimage imagetype="skinpart" path="watchback" x="0" y="0" width="100%" height="100%"/>
         </area>
         <area x="80%" y="0" width="10%" height="5%" layer="5">
-            <drawtext x="0" valign="center" font="{digital}" fontsize="75%" color="{clrWhite}" text="{printf('%02d:%02d.%02d', hour, min, sec)}" />
+            <drawtext x="0" valign="center" font="{digital}" fontsize="75%" color="{clrWhite}" text="{printf('%02d:%02d:%02d', hour, min, sec)}" />
         </area>
         <area x="{areawidth}*0.865" y="{areawidth}*0.005" width="13%" height="{areawidth}*0.13" layer="5">
             <drawimage imagetype="skinpart" path="watchhands/s_{sec}" x="0" y="0" width="100%" height="100%"/>
