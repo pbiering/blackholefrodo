@@ -143,7 +143,19 @@
     {devices[channelid]}        ID of the currently tuned channel
     {devices[source]}           source of the currently tuned channel
     -->
-    <devices>
+    <devices mode="full">
+        <area condition="{showdevicesmain}" x="1%" y="85%" width="48%" height="8%" layer="2">
+	    <loop name="devices" x="2" y="5" orientation="vertical" columnwidth="{areawidth}" rowheight="{areaheight} / {numdevices}"  overflow="cut">
+                <drawtext condition="not{devices[hascam]}" x="0" y="0" font="{bold}" fontsize="35%" color="{clrDevice}" text="{devices[num]}: {devices[type]}" />
+                <drawtext condition="{devices[hascam]}" x="0" y="0" font="{bold}" fontsize="35%" color="{clrDevice}" text="{devices[num]}: {devices[type]} (CAM {devices[cam]})" />
+		<drawtext condition="{devices[recording]} ++ {devices[livetv]}" x="5%" y="2%" font="{regular}" fontsize="35%" width="{columnwidth} * 75 / 100" color="{clrRed}" text="LiveTV, Aufnahme ({devices[channelname]}) " />
+		<drawtext condition="{devices[recording]} ++ not{devices[livetv]}" x="5%" y="2%" font="{regular}" fontsize="35%" width="{columnwidth} * 75 / 100" color="{clrRed}" text="Aufnahme ({devices[channelname]}) " />
+		<drawtext condition="not{devices[recording]} ++ {devices[livetv]}" x="5%" y="2%" font="{regular}" fontsize="35%" width="{columnwidth} * 75 / 100" color="{clrDevice}" text="LiveTV ({devices[channelname]}) " />
+                <drawtext condition="not{devices[istuned]}" x="0%" y="0%" font="{regular}" fontsize="30%" width="{columnwidth}" color="{clrDevice}" text="not tuned" />
+                <drawrectangle condition="{devices[istuned]}" x="80%" y="10%" width="{columnwidth} * {devices[signalstrength]} / 500 - 10 * {devices[signalstrength]} / 500" height="{rowheight}/8" color="{clrDevice}" />
+                <drawrectangle condition="{devices[istuned]}" x="80%" y="20%" width="{columnwidth} * {devices[signalquality]} / 500 - 10 * {devices[signalquality]} / 500" height="{rowheight}/8" color="{clrDevice}" />
+            </loop>
+        </area>
     </devices>
 
     <!-- Available Variables systemload:
